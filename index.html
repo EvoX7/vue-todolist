@@ -27,7 +27,7 @@
           <h1>To Boolist</h1>
           <ul class="list-group">
             <li class="list-group-item" v-for="todo in todos" :class="{'line-through': todo.done }">
-              {{ todo.text }}
+              {{ todo.text }}<span><i class="fa-solid fa-xmark ms-3" @click="deleteFromList"></i></span>
             </li>
           </ul>
         </div>

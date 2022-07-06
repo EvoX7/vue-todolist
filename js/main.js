@@ -3,24 +3,31 @@ const app = new Vue({
   data: {
     todos: [
       {
-        text: 'Fare i compiti',
+        text: 'Study code',
         done: false
       },
       {
-        text: 'Fare la spesa',
+        text: 'Drink water to not evaporate',
         done: true
       },
       {
-        text: 'Fare il bucato',
+        text: 'Complete assigned tasks',
+        done: true
+      },
+      {
+        text: 'Take five minutes to yourself ',
         done: false
-      }
+      },
+
     ],
 
   },
-  
+
   methods: {
+    deleteFromList(index) {
+      this.todos.splice(index, 1);
 
-
+    }
   }
 
 });

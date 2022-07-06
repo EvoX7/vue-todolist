@@ -9,11 +9,19 @@ body {
   background-color: #072448;
 }
 
+li {
+  font-size: 30px;
+}
+
 h1 {
   color: #072448;
 }
 
 .line-through {
   text-decoration: line-through;
+}
 
+.fa-xmark {
+  color: red;
+  cursor: pointer;
 }
