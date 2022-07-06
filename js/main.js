@@ -24,10 +24,12 @@ const app = new Vue({
   },
 
   methods: {
-    deleteFromList(index) {
-      this.todos.splice(index, 1);
-
+    deleteFromList(item) {
+      this.todos.splice(item, 1);
+  
+      
     }
-  }
+
+}
 
 });
