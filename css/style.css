@@ -1,0 +1,19 @@
+.ms-container {
+  background-color: #f8aa4b;
+  width: 800px;
+  height: 700px;
+  border-radius: 25px;
+}
+
+body {
+  background-color: #072448;
+}
+
+h1 {
+  color: #072448;
+}
+
+.line-through {
+  text-decoration: line-through;
+
+}
