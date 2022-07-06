@@ -26,10 +26,12 @@
           <hr>
           <h3>Add your new task</h3>
 
-          <!-- ?Inpout New Task  -->
-          <input class="mb-4 mt-2" type="text" v-model="newTodo" @keyup.enter="addToList(newTodo)"> <br>
+          <!-- ?Input New Task  -->
+          <input class="input_style mb-4 mt-2" type="text" v-model="newTodo" @keyup.enter="addToList(newTodo)"> <br>
+
           <!-- ?Button to add new task  -->
           <button type="button" class="btn btn-success mb-3" @click="addToList(newTodo)">Add task</button>
+
           <!-- !Tasks  -->
           <ul class="list-group">
             <li class="list-group-item" v-for="(todo,index) in todos" :class="{'line-through': todo.done }">

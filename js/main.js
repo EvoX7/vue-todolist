@@ -28,7 +28,7 @@ const app = new Vue({
     newTodo: ""
   },
 
-  // ? Delete task
+    // ? Delete task
   methods: {
     deleteFromList(item) {
       this.todos.splice(item, 1);
@@ -37,7 +37,7 @@ const app = new Vue({
     // * Add task
     addToList: function (newTask) {
       if (newTask == "") {
-        alert("Please, specify a new task!");
+        alert("Please, enter a new task!");
       } else {
         this.todos.push({ text: newTask, done: false });
         this.newTodo = "";
