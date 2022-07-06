@@ -15,21 +15,29 @@ const app = new Vue({
         done: true
       },
       {
-        text: 'Take five minutes to yourself ',
+        text: 'Take five minutes to yourself',
         done: false
       },
 
+      {
+        text: 'Do the laundry',
+        done: false
+      },
     ],
+
+    newTodo: '',
 
   },
 
   methods: {
     deleteFromList(item) {
       this.todos.splice(item, 1);
-  
-      
-    }
+    },
 
+    addToList: function (newTask) {
+        this.todos.push(newTask);
+        this.newTodo = '';
+  }
 }
 
 });
